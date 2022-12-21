@@ -8,7 +8,7 @@ export const TodoAdd = ({ onNewTodo }) => {
     });
 
     const onFormSubmit = ( event ) => {
-        event.preventDefault();
+        event.preventDefault(); // Para que no recargue la pagina
         if ( description.length <= 1 ) return;
 
         const newTodo = {
